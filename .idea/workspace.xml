@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="001ca9d8-d0fc-4561-b039-ab5d1790761e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson2/readme.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lesson2/task_2_1.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lesson2/task_2_2.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lesson2/task_2_3.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lesson2/task_2_4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +43,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lesson1/task_1_2.py" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager" selected="Python.task_2_4">
+  <component name="RunManager" selected="Python.task_2_2">
     <configuration name="task_1_2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -148,9 +151,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.task_2_2" />
         <item itemvalue="Python.task_2_4" />
         <item itemvalue="Python.task_2_3" />
-        <item itemvalue="Python.task_2_2" />
         <item itemvalue="Python.task_1_2" />
         <item itemvalue="Python.task_2_1" />
       </list>
