@@ -10,9 +10,10 @@ price_list = [57.8, 46.40, 97, 12.3, 67.54, 8.07, 982.12]
 price_str = ''
 for price in price_list:
     price_str += str(int(price))+' руб '
-    if len(str(round((price % 1)*100))) == 1:
+    price_cent = str(round((price % 1)*100))
+    if len(price_cent) == 1:
         price_str += '0'
-    price_str += str(round((price % 1)*100)) + ' коп, '
+    price_str += price_cent + ' коп, '
 
 print(f"Исходный список:\n{price_list}")
 print(price_str)
