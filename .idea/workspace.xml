@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f88de26-de6d-4aea-86fc-a146ce6dc795" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lesson4/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson4/task_4_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson4/task_4_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson4/task_4_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson4/task_4_5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson4/testt.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson4/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson4/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lesson4/readme.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -27,6 +27,6 @@ def currency_rates_advanced(cur_link, cur_code):
 
 
 link = 'http://www.cbr.ru/scripts/XML_daily.asp'
-currency_code = 'qer'
+currency_code = 'eur'
 
 print(currency_rates_advanced(link, currency_code))
