@@ -18,4 +18,8 @@ else:
         print("Возможен вывод курса только одной валюты")
     link = 'http://www.cbr.ru/scripts/XML_daily.asp'
     currency_code = argv[1]
-    print(f"Курс {currency_code.upper()}: {currency_rates(link, currency_code)}")
+    currency_rate = currency_rates(link, currency_code)
+    if currency_rate is None:
+        print("Не найдена валюта")
+    else:
+        print(f"Курс {currency_code.upper()}: {currency_rate}")
