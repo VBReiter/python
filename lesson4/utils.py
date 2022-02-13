@@ -32,8 +32,9 @@ def currency_rates_advanced(cur_link, cur_code):
         val = float(content[find_val:end_val].replace(",", "."))
     else:
         val = None
-    find_date = content.find('ValCurs Date=') + len('ValCurs Date=')
-    cur_date = map(int, reversed(str(content[find_date + 1:find_date + 11]).split(".")))
+    find_date = content.find('ValCurs Date="') + len('ValCurs Date="')
+    find_date_end = content.find('" name')
+    cur_date = map(int, reversed(str(content[find_date:find_date_end]).split(".")))
     (year, month, day) = cur_date
     return date(year, month, day), val
 
