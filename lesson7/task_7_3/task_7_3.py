@@ -26,6 +26,7 @@ from os import mkdir, walk, scandir
 from os.path import join, exists, abspath
 from shutil import copytree
 
+
 templ_path = []
 for root, dirs, files in walk(join(".", "my project")):
     if "templates" in root and "templates\\" not in root:

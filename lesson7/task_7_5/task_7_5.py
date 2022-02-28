@@ -23,11 +23,12 @@ __author__ = 'Рейтер Валерия Борисовна'
 
 from os import scandir
 from os.path import join
+import json
 
 # stat_sublist = []
 stat_dict = {100: [0], 1000: [0], 10000: [0], 100000: [0]}
 
-start_folder = join(".", "task_7_4", "some_data_adv")
+start_folder = join(".", "..", "task_7_4", "some_data_adv")
 scan_folder = scandir(start_folder)
 i_prev = 0
 for item in scan_folder:
@@ -49,4 +50,8 @@ for item in scan_folder:
                         stat_dict[i].append(stat_sublist)
             i_prev = i
 
-print(stat_dict)
+
+with open(file=join(".", "..", "task_7_5", "summary.json"), mode="wt", encoding='utf-8') as f_json:
+    json.dump(stat_dict, f_json, indent=2)
+
+# print(stat_dict)
