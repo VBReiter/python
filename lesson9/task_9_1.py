@@ -33,7 +33,7 @@ from itertools import cycle
 
 class TrafficLight:
 
-    def __init__(self, color):
+    def __init__(self, color="красный"):
         self.color = color
 
     def state(self):
@@ -41,16 +41,19 @@ class TrafficLight:
         return result
 
     def running(self):
-        change_state = {"красный": 7, "желтый": 2, "зеленый": 10, "желтый": 2}
-        light_run = cycle(change_state)
+        dir_change_time = {"красный": 7, "жёлтый": 2, "зелёный": 10}
+        lst_change_state = ["красный", "жёлтый", "зелёный", "жёлтый"]
+        light_run = cycle(lst_change_state)
 
-        for i in range(10):
+        for i in range(5):
             s_state = next(light_run)
-            sleep(change_state[s_state])
             self.color = s_state
-            return self.state()
+            print(self.state())
+            sleep(dir_change_time[s_state])
+            i += 1
 
-a = TrafficLight("желтый")
+
+a = TrafficLight()
 print(a.running())
 
 

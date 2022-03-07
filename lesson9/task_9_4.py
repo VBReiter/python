@@ -37,11 +37,12 @@ class Car:
 
 
 class TownCar(Car):
-    def __init__(self, speed, color, name):
+    def __init__(self, speed, color, name, speed_limit):
+        self.speed_limit = speed_limit
         super().__init__(speed, color, name, "town")
 
     def show_speed(self):
-        if self.speed > 60:
+        if self.speed > self.speed_limit:
             result = f"Превыщение скорости! {self.speed} км/ч"
         else:
             result = f"Текущая скорость автомобиля {self.speed} км/ч"
@@ -54,11 +55,12 @@ class SportCar(Car):
 
 
 class WorkCar(Car):
-    def __init__(self, speed, color, name):
+    def __init__(self, speed, color, name, speed_limit):
+        self.speed_limit = speed_limit
         super().__init__(speed, color, name, "work")
 
     def show_speed(self):
-        if self.speed > 40:
+        if self.speed > self.speed_limit:
             result = f"Превыщение скорости! {self.speed}"
         else:
             result = f"Текущая скорость автомобиля {self.speed} км/ч"
@@ -66,14 +68,14 @@ class WorkCar(Car):
 
 
 class PoliceCar(Car):
-    def __init__(self, speed, color, name, type="Car"):
-        super().__init__(speed, color, name, type, "True")
+    def __init__(self, speed, color, name):
+        super().__init__(speed, color, name, "Car", "True")
 
 
 car_a = Car(speed=60, color="green", name="Toyota")
 print(f"Машина класса Car: {car_a.show_speed()}")
 
-car_town = TownCar(speed=80, color="blue", name="BMW")
+car_town = TownCar(speed=80, color="blue", name="BMW", speed_limit=60)
 print(f"Машина класса TownCar: {car_town.show_speed()}")
 
 car_police = PoliceCar(speed=100, color="white", name="Lada")
